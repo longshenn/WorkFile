@@ -20,5 +20,12 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        PingtungB.setOnClickListener(object :View.OnClickListener{
+            override fun onClick(p0:View?){
+                intent = Intent(this@MainActivity, QuestionActivity::class.java)
+                startActivity(intent)
+            }
+        })
+
     }
 }
